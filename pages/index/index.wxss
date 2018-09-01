@@ -1,0 +1,92 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+.indexTitle{
+  background: #fcaf01;
+  height:50rpx;
+  line-height: 50rpx;
+  padding:5rpx 10rpx;
+  color:#fff;
+  font-size:24rpx;
+}
+.indexContain{
+  padding:70rpx 50rpx;
+}
+.indexH2{
+  font-size:60rpx;
+  color:#000;
+}
+.indexIntro{
+  color:#818181;
+  font-size:34rpx;
+  margin-top: 40rpx;
+}
+
+.inputWrap{
+  border-top:1rpx solid #e2e2e2;
+  border-bottom:1rpx solid #e2e2e2;
+   padding:10rpx 20rpx; 
+  display:flex;
+  justify-content: space-around;
+}
+.videoLabel{
+  font-size:34rpx;
+}
+.videoUrl{
+  font-size:32rpx;
+}
+.indexContact{
+  padding:10rpx 20rpx;
+  color:#a1a1a1;
+  font-size:32rpx;
+  display:block;
+}
+.buttonWrap{
+  width:100%;
+  margin:60rpx 0;
+  display:flex;
+  justify-content: space-between;
+}
+.analysis{
+  width:200rpx;
+  padding:10rpx;
+  font-size:30rpx;
+  background:#3bb6f2;
+  color:#fff;
+}
+.paste{
+  width:200rpx;
+  padding:10rpx;
+  background:#f8f8f8;
+  color:#000;
+  font-size:30rpx;
+  outline: none;
+}
+/* 
+.paste::after{
+  border-bottom:1px solid #CC3333;
+} */
+.text-center{
+  display:block;
+  text-align: center;
+  font-size:30rpx;
+  margin:20rpx auto;
+}
