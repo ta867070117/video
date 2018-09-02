@@ -25,7 +25,7 @@
   </view>
 <text class="indexContact">如遇到问题请添加客服微信处理</text>
 <view class="buttonWrap">
-  <button class="analysis">解析</button>
+  <button class="analysis" bindtap='getAuthorMessage' open-type='getUserInfo'>解析</button>
   <button class="paste">粘贴</button>
 </view>
 
