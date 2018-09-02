@@ -22,6 +22,12 @@
    onLoad: function () {
      
    },
+   onShareAppMessage: function () {
+     return {
+       title: '短视频快速去水印',
+       path: '/pages/index/index'
+     }
+   },
    getAuthorMessage: function(e) {
      var that = this;
      var btnUrl = this.data.userUrl;
@@ -46,20 +52,17 @@
                  },
                  success: function (res) {
                    var video = res.data.data;
-                   console.log(video+"====video")
-                   console.log(btnUrl + "====btnUerl")
-                   if (res.data.retCode === '0002') {
+                   if (res.data.code === '0002') {
+                     wx.hideLoading()
                      wx.showToast({
                        title: '视频地址有误',
                        icon: 'none'
-                     })
-                     wx.hideLoading()
+                     })  
                    } else if (res.data.code === '0001') {
                       this.userUrl = video; //无效不能实时的渲染到页面
                       that.setData({ userUrl: video });//和页面进行绑定可以动态的渲染到页面
                       that.setData({link:video});
-                      wx.hideLoading()
-
+                      wx.hideLoading();
                    }
                  },
                  fail:function(res) {

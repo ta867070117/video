@@ -23,10 +23,12 @@
   <input  class="videoUrl" placeholder='请输入视频链接' bindblur ="userUrlInput" value=' {{userUrl}}'/>
 
   </view>
-<text class="indexContact">如遇到问题请添加客服微信处理</text>
+<text class="indexContact">后续会更新直接保存到手机功能，记得关注下哟。
+暂时只支持在线浏览，明日更新保存功能
+</text>
 <view class="buttonWrap">
   <button class="analysis" bindtap='getAuthorMessage' open-type='getUserInfo'>解析</button>
-  <button class="paste">粘贴</button>
+  <button class="paste" open-type="share">分享给朋友</button>
 </view>
 
 <video id="" class="videoOne" src="{{link}}"></video>
