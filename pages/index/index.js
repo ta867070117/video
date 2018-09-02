@@ -4,7 +4,7 @@
 
  Page({
    data: {
-     
+     'userUrl':''
    },
    //事件处理函数
    bindViewTap: function() {
@@ -16,6 +16,7 @@
      
    },
    getAuthorMessage: function(e) {
+     var that = this;
      wx.getSetting({
        success: function (res) {
          if (res.authSetting['scope.userInfo']) {
@@ -33,53 +34,25 @@
                    'content-type': 'application/json' // 默认值
                  },
                  success: function (res) {
-                  var video = res.data.data.video;
-                   console.log(video);
-                   if (res.data.retCode === 400) {
+                   var video = res.data.data;
+                   console.log(video)
+                   if (res.data.retCode === '0002') {
                      wx.showToast({
                        title: '视频地址有误',
                        icon: 'none'
                      })
-                   } else if (res.data.retCode === 200) {
-                     //获取用户相册权限
-                     wx.getSetting({
-                       success: function (res) {
-                         if (res.authSetting['scope.writePhotosAlbum']) {
-                          console.log("走到我这里")
-                           wx.saveVideoToPhotosAlbum({
-                             filePath: video,
-                             success(res) {
-                               console.log("成功了哟")
-                             },
-                             fail(res) {
-                               console.log("失败了哟")
-                             }
-                           }
-                           )
-                         }else {
-                           wx.saveVideoToPhotosAlbum({
-                             filePath: video,
-                             success(res) {
-                               console.log("成功了哟   111")
-                               console.log(res.errMsg)
-                             },
-                             fail(res) {
-                               console.log("失败了哟")
-                               console.log(res.errMsg)
-                             }
-                           }
-                           )
-                         }
-                       }
-                     })
-
+                   } else if (res.data.code === '0001') {
+                     console.log(video);
+                     this.userUrl = video; //无效不能实时的渲染到页面
+                     that.setData({ userUrl: video });//和页面进行绑定可以动态的渲染到页面
+                     //将地址返回给前端
 
                    }
                  }
-               })
+               }
+               )
              }
-           })
-              
+           })               
           }
        }
       })

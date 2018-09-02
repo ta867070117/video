@@ -20,7 +20,7 @@
   </view>
   <view class="inputWrap clearfix">
   <label class="videoLabel">视频链接</label>
-  <input class="videoUrl" placeholder='请输入视频链接' value=''/>
+  <input class="videoUrl" placeholder='请输入视频链接' value=' {{userUrl}}'/>
 
   </view>
 <text class="indexContact">如遇到问题请添加客服微信处理</text>
@@ -29,7 +29,7 @@
   <button class="paste">粘贴</button>
 </view>
 
-<video id="" class="videoOne" src="{{videoUrl}}"></video>
+<video id="" class="videoOne" src="{{userUrl}}"></video>
 <text class="text-center">视频归平台及作者所有，本地不存储任何视频及图片</text>
 <text class="text-center">Copyright©2018-2019 baidu.com</text>
 </view>
