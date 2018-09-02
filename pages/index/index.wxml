@@ -15,12 +15,12 @@
   <view class="indexTitle">支持去水印的平台：抖音、快手、微视、火山、美拍！</view>
   <view class="indexContain">
      <view class="indexH2">去水印小工具</view>
-     <text class="indexIntro">新用户送0.5元体验，拉新有奖励，解析价格已下调至：0.2元次，新接入"全民"、"皮皮虾"去水印，注意：二次上传的视频无法去除水印。</text>
+     <text class="indexIntro">将抖音分享链接复制到这里即可</text>
   
   </view>
   <view class="inputWrap clearfix">
   <label class="videoLabel">视频链接</label>
-  <input  class="videoUrl" placeholder='请输入视频链接' bindinput ="userUrlInput" value=' {{link}}'/>
+  <input  class="videoUrl" placeholder='请输入视频链接' bindblur ="userUrlInput" value=' {{userUrl}}'/>
 
   </view>
 <text class="indexContact">如遇到问题请添加客服微信处理</text>
@@ -29,7 +29,7 @@
   <button class="paste">粘贴</button>
 </view>
 
-<video id="" class="videoOne" src="{{userUrl}}"></video>
+<video id="" class="videoOne" src="{{link}}"></video>
 <text class="text-center">视频归平台及作者所有，本地不存储任何视频及图片</text>
 <text class="text-center">Copyright©2018-2019 baidu.com</text>
 </view>
