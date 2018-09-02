@@ -34,6 +34,7 @@
                  },
                  success: function (res) {
                   var video = res.data.data.video;
+                   console.log(video);
                    if (res.data.retCode === 400) {
                      wx.showToast({
                        title: '视频地址有误',

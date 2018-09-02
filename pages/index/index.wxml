@@ -29,7 +29,7 @@
   <button class="paste">粘贴</button>
 </view>
 
-
+<video id="" class="videoOne" src="{{videoUrl}}"></video>
 <text class="text-center">视频归平台及作者所有，本地不存储任何视频及图片</text>
 <text class="text-center">Copyright©2018-2019 baidu.com</text>
 </view>

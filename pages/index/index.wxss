@@ -49,10 +49,13 @@
 }
 .videoLabel{
   font-size:34rpx;
+  width:150rpx;
 }
 .videoUrl{
   font-size:32rpx;
+    margin-left:-80rpx;
 }
+
 .indexContact{
   padding:10rpx 20rpx;
   color:#a1a1a1;
@@ -89,4 +92,10 @@
   text-align: center;
   font-size:30rpx;
   margin:20rpx auto;
+}
+.videoOne{
+  display:block;
+  width:95%;
+  margin:0 auto;
+  height:300rpx;
 }
