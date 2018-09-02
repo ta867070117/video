@@ -59,7 +59,7 @@
                            wx.saveVideoToPhotosAlbum({
                              filePath: video,
                              success(res) {
-                               console.log("成功了哟   ")
+                               console.log("成功了哟   111")
                                console.log(res.errMsg)
                              },
                              fail(res) {
