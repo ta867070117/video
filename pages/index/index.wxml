@@ -20,7 +20,7 @@
   </view>
   <view class="inputWrap clearfix">
   <label class="videoLabel">视频链接</label>
-  <input class="videoUrl" placeholder='请输入视频链接' value=' {{userUrl}}'/>
+  <input  class="videoUrl" placeholder='请输入视频链接' bindinput ="userUrlInput" value=' {{link}}'/>
 
   </view>
 <text class="indexContact">如遇到问题请添加客服微信处理</text>
